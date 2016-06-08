@@ -1,0 +1,36 @@
+{
+  "name": "bauen-block",
+  "version": "0.0.1",
+  "description": "Node module allows one to easily define or invoke a block.",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/nyc ./node_modules/.bin/ava",
+    "lint": "./node_modules/.bin/eslint .",
+    "coverage": "./node_modules/.bin/nyc report --reporter=text-lcov > coverage.lcov",
+    "lint-english": "./node_modules/.bin/write-good *.md && ./node_modules/.bin/alex",
+    "coverage-report": "./node_modules/.bin/nyc report --reporter=html ./node_modules/.bin/ava && open ./coverage/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bauen/bauen-block.git"
+  },
+  "keywords": [
+    "Bauen"
+  ],
+  "author": " <Patrick Coffey patrickcoffey48@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Bauen/bauen-block/issues"
+  },
+  "homepage": "https://github.com/Bauen/bauen-block#readme",
+  "devDependencies": {
+    "alex": "^3.0.0",
+    "ava": "^0.15.2",
+    "babel-eslint": "^6.0.4",
+    "eslint": "^2.11.1",
+    "eslint-config-airbnb-base": "^3.0.1",
+    "eslint-plugin-import": "^1.8.1",
+    "nyc": "^6.4.4",
+    "write-good": "^0.9.1"
+  }
+}
